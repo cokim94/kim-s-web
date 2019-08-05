@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Đăng nhập thành viên</title>
+	<style>
+		body{background-image: url("../pics/bg2.jpg");background-repeat: no-repeat;background-size: cover;}
+	
+		
+		.d2{color:salmon; text-decoration:underline }
+		
+		
+		form{box-sizing: border-box;
+			text-align: center;
+			width: 600px;
+			background-color: aliceblue;
+			margin: 100px auto 0;
+			box-shadow: 2px 2px 5px 1px grey;
+			padding-bottom: 40px;
+			border-radius: 3px
+			}
+		
+		form h1{box-sizing: border-box;padding: 20px;text-align:center; background-color: gold;color: whitesmoke}
+		
+		input{
+			outline-style: none;
+			font-size: 18px;
+			border-radius: 4px;
+			width: 400px;
+			margin:0 100px;
+			display: block;
+			boder:none;
+			padding: 15px 5px;
+			border-bottom: solid 1px gold ; transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+			background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, gold 4%);
+			background-position: -200px 0%;
+			background-size: 200px 100%;
+			background-repeat: no-repeat;
+			color:darkgoldenrod;
+			}
+		
+		input: focus, input: valid{
+			box-shadow: none;
+			outline: none;
+			background-position: 0 0;
+			
+			}
+		
+		input: focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder{
+			color: gold;
+			font-size: 11px;
+			transform: translateY(-20px);
+			visibility: visible !important;
+			
+			}
+		
+		textarea{			
+			font-size: 14px;
+			border-radius: 4px;
+			width: 400px;
+			margin:0 100px;
+			display: block;
+			boder:none;
+			padding: 15px 5px;
+			border-bottom: solid 1px gold ; transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+			background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, gold 4%);
+			background-position: -200px 0%;
+			background-size: 200px 100%;
+			background-repeat: no-repeat;
+			color:darkgoldenrod;}
+		
+		fieldset{
+			margin:10px 100px;
+			padding: 20px;
+			width:300px;
+			height: 100px;
+			display: inline-block
+			
+			
+			}
+		
+		button{
+			font-size: 15px;
+			border: none;
+			background: gold;
+			cursor: pointer;
+			border-radius: 3px;
+			padding: 6px;
+			width: 200px;
+			color: white;
+			margin-left: 50px;
+			box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+			
+			}
+		
+		button:hover{
+			transform: translateY(-3px);
+			box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+			
+			}
+
+	</style>
+		
+
+		
+		
+	
+</head>
+
+<body>
+	<form>		
+	<h1 class="d1">Chào mừng bạn đến với<br> Kimcoco'Art Gallery </h1>
+	<h4 class="d2">Hãy đăng kí thành viên để nhận nhiều ưu đãi từ Kimcoco'Art Gallery! </h4>
+		
+			<div class="formgroup">
+	
+		  <input  tabindex="1" placeholder="Họ và tên đệm"> 
+			<br><br>
+		  <input  tabindex="2" placeholder="Tên ">
+			<br><br>
+			<input type="date">
+			<br><br>
+		  <input tabindex="3" placeholder="Tên	đăng nhập ">
+			<br><br>
+		  <input  type="email" tabindex="4" placeholder="Email ">
+			<br><br>
+		<input onFocus="pss" type="password" tabindex="5" placeholder="Mật khẩu ">
+			<br><br>
+		<input list="Q" placeholder="Câu hỏi bảo mật">
+				<datalist id="Q">
+					<option value="Loại hoa bạn yêu thích?"></option>
+					<option value="Loại tranh bạn yêu thích?"></option>
+					<option value="Loài động vật bạn yêu thích?"></option>
+				</datalist>
+			<br><br>
+				<textarea placeholder="câu trả lời" cols="20" rows="5" ></textarea>
+				
+			
+			
+			
+	  
+			</div>
+	
+			<div class="control group">
+		<fieldset>
+				<legend>Giới tính</legend>
+			<label><input type="radio" name="gioitinh" value="male" checked>Nam  </label>
+			<label><input type="radio" name="gioitinh" value="female">Nữ</label>
+			<label><input type="radio" name="gioitinh" value="unknown">Giới tính khác</label>
+				
+		</fieldset>
+				
+				<button type="reset">RESET</button>
+				<hr>
+				<button type="submit">Đăng kí thành viên</button>
+				<button disabled type="button">Hủy</button>
+	
+								
+			
+			</div>
+			
+	
+		</form>
+	
+	
+	
+		
+	
+</body>
+</html>
